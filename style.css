@@ -31,6 +31,7 @@
     }
     
     header label {
+        box-sizing: content-box;
         display: none;
         height: 30px;
         width: 30px;
@@ -178,10 +179,17 @@ main {
 }
 
 
+.cajas {
+    transition: 0.5s;
+    object-fit: cover;
+}
 
 
-
-
+@media (min-width:1024px) {
+.cajas:hover{
+    transform: scale(1.05);
+    }
+}
 
 
 /* edicion quienes somos*/
@@ -205,14 +213,12 @@ main {
 
 }
 
-.mini-galeria__item {
-    border: 3px solid black;
-}
 
 .mini-galeria__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.8s;
 }
 
 @media (min-width:600px) {
@@ -231,6 +237,9 @@ main {
 @media (min-width:1024px) {
     .mini-galeria__contenedor {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .mini-galeria__img:hover{
+        transform: scale(1.05);
     }
 }
 
@@ -282,9 +291,6 @@ main {
     transition: 0.5s;
 }
 
-.galeria__img:hover{
-transform: scale(1.2);
-}
 
 
 
@@ -306,6 +312,10 @@ transform: scale(1.2);
     .galeria__contenedor {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .galeria__img:hover{
+        transform: scale(1.05);
+        }
 }
 
 
@@ -398,11 +408,20 @@ transform: scale(1.2);
 }
 
 
+iframe{
+    width: 100%;
+}
 
+.cajasContacto {
+    transition: 0.5s;
+    object-fit: over;
+}
 
-
-
-
+@media (min-width:1024px) {
+    .cajasContacto:hover{
+        transform: scale(1.05);
+        }
+}
 
 /*edicion footer*/
 
