@@ -221,7 +221,7 @@ main {
 /* edicion quienes somos*/
 
 
-.historia {
+#historia {
     margin: 60px 20px 20px 20px;
     border: 5px solid rgb(253, 152, 231);;
     border-radius: 10px;
@@ -354,7 +354,7 @@ main {
 
 /*edicion contacto*/
 
-.titulo-contacto {
+#titulo-contacto {
     margin-top: 60px;
     text-align: center;
     font-size: 35px;
